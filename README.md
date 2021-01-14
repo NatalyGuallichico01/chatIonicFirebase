@@ -4,73 +4,49 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 
 ## :page_facing_up: Table of contents
 
-* [General info](#general-info)
+* [Información general](#general-info)
 * [Screenshots](#screenshots)
-* [Technologies](#technologies)
+* [Technologias](#technologias)
 * [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [Caracrerísticas](#características)
+* [Inspiración](#inspiración)
+* [Contacto](#contacto)
 
 ## :books: General info
 
 * Note: Angular imports for Firestore are now from '@angular/fire/firestore'.
-* Todos are passed to/from the firestore database as [observables](https://angular.io/guide/observables).
 
 ## :camera: Screenshots
 
-![todo items shown on ionic frontend and Firestore database](./img/todo_items.png)
+![todo items shown on ionic frontend and Firestore database](./img/logIn.png)
 
 ## :signal_strength: Technologies
 
-* [Ionic/angular v4.4.2](https://ionicframework.com/)
-* [Ionic v5.7.0](https://ionicframework.com/)
-* [Angular v8.0.0](https://angular.io/)
-* [Firebase cloudstore v6.1.1](https://firebase.google.com/)
+* [Ionic/angular v5.5.2](https://ionicframework.com/)
+* [Ionic v6.12.3](https://ionicframework.com/)
+* [Firebase cloudstore v8.2.2](https://firebase.google.com/)
+* [Capacitor v2.4.6](https://capacitorjs.com/)
 
 ## :floppy_disk: Setup
 
-* To start the server on _localhost://8100_ type: 'ionic serve'
-
-## :computer: Code Examples
-
-* It was necessary to clear the setting for the firestore timestampsInSnapshots in app.module.ts - see below.
-
-```typescript
-import { AngularFirestoreModule, FirestoreSettingsToken } from '@angular/fire/firestore';
-@NgModule({
-  declarations: [AppComponent],
-  imports: [
-     ...
-     AngularFirestoreModule,
-     ...
-  ],
-  providers: [{ provide: FirestoreSettingsToken, useValue: {} }],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
+* Correr el servidor en _localhost://8100_ ejecutando: 'ionic serve'
 
 ## :cool: Features
 
-**CRUD operations:**
+**Formulario de registro e inicio de sesión:**
 
-* Create: Click '+' to create a to-do item.
-* Read: Line items are displayed on the home page.
-* Update: Click on item line to edit.
-* Delete: swipe left and a coloured 'DONE' button appears on the right.
+* Registrarse: Click '+' en Sing up.
+* Iniciar Sesión: Click '+' en Sing in.
 
-## :clipboard: Status & To-do list
+**Envío de mensajes:**
+* Enviar mensaje: Formulario y botón para el envío.
 
-* Status: Working.
-* To-do: Add more detail/styling to front page.
 
 ## :clap: Inspiration
 
-* Project inspired by [Simon Grimm´s Youtube video 'How to Create a Simple Ionic 4 App with Firebase and AngularFire'](https://www.youtube.com/watch?v=H20l9ofyR54&t=1375s)
+* Proyecto inspirado en [Simon Grimm´s Web Page devdactic 'Building an Ionic Firebase Chat with Authentication'](https://devdactic.com/ionic-firebase-chat/)
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo creado por [Miguel]
 
