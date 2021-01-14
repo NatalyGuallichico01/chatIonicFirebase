@@ -32,3 +32,45 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 ## :floppy_disk: Setup
 
 * To start the server on _localhost://8100_ type: 'ionic serve'
+
+## :computer: Code Examples
+
+* It was necessary to clear the setting for the firestore timestampsInSnapshots in app.module.ts - see below.
+
+```typescript
+import { AngularFirestoreModule, FirestoreSettingsToken } from '@angular/fire/firestore';
+@NgModule({
+  declarations: [AppComponent],
+  imports: [
+     ...
+     AngularFirestoreModule,
+     ...
+  ],
+  providers: [{ provide: FirestoreSettingsToken, useValue: {} }],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+## :cool: Features
+
+**CRUD operations:**
+
+* Create: Click '+' to create a to-do item.
+* Read: Line items are displayed on the home page.
+* Update: Click on item line to edit.
+* Delete: swipe left and a coloured 'DONE' button appears on the right.
+
+## :clipboard: Status & To-do list
+
+* Status: Working.
+* To-do: Add more detail/styling to front page.
+
+## :clap: Inspiration
+
+* Project inspired by [Simon Grimm´s Youtube video 'How to Create a Simple Ionic 4 App with Firebase and AngularFire'](https://www.youtube.com/watch?v=H20l9ofyR54&t=1375s)
+
+## :envelope: Contact
+
+* Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+
