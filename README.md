@@ -41,7 +41,7 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 **Envío de mensajes:**
 * Enviar mensaje: Formulario y botón para el envío.
 
-## :app: APK
+## :application: APK
 
 [Descargar](https://epnecuador-my.sharepoint.com/:u:/g/personal/miguel_jurado_epn_edu_ec/EVx0tEFp0PNOsBRwAiYJqjYB8bfGShuWYDbnU4TaQiPmXA?e=xxmlM0)
 
