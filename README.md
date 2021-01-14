@@ -13,8 +13,13 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 * [Contacto](#contacto)
 
 ## :books: Información general
-
-* Note: Angular imports for Firestore are now from '@angular/fire/firestore'.
+#Librerías en el servidor
+* import { Injectable } from '@angular/core';
+* import { AngularFireAuth } from '@angular/fire/auth';
+* import { AngularFirestore } from '@angular/fire/firestore';
+* import firebase from 'firebase/app';
+* import { switchMap, map } from 'rxjs/operators';
+* import { Observable } from 'rxjs';
 
 ## :camera: Screenshots
 
