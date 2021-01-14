@@ -27,7 +27,7 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 * [Firebase cloudstore v8.2.2](https://firebase.google.com/)
 * [Capacitor v2.4.6](https://capacitorjs.com/)
 
-## :floppy_disk: Setup
+## :floppy_disk: Setup 
 
 * Correr el servidor en _localhost://8100_ ejecutando: 'ionic serve'
 
@@ -41,7 +41,7 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 **Envío de mensajes:**
 * Enviar mensaje: Formulario y botón para el envío.
 
-## :foxdemo: APK
+## 📦 APK
 
 [Descargar](https://epnecuador-my.sharepoint.com/:u:/g/personal/miguel_jurado_epn_edu_ec/EVx0tEFp0PNOsBRwAiYJqjYB8bfGShuWYDbnU4TaQiPmXA?e=xxmlM0)
 
