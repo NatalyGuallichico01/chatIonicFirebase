@@ -1,4 +1,4 @@
-# :zap: Ionic Chat App with Firebase
+# :zap: App de Chat en Ionic con Firebase
 
 App creada usando [Ionic framework](https://ionicframework.com/docs), usando una base de datos en la nube de firebase para almacenar los mensajes y usuarios de la app. Además, se integró capacitor para crear el apk.
 
@@ -7,7 +7,7 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 * [Información general](#general-info)
 * [Screenshots](#screenshots)
 * [Technologías](#technologias)
-* [Setup](#setup)
+* [Disposición](#Disposición)
 * [Caracrerísticas](#características)
 * [Inspiración](#inspiración)
 * [Contacto](#contacto)
@@ -32,7 +32,7 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 * [Firebase cloudstore v8.2.2](https://firebase.google.com/)
 * [Capacitor v2.4.6](https://capacitorjs.com/)
 
-## :floppy_disk: Setup 
+## :floppy_disk: Disposición
 
 * Correr el servidor en _localhost://8100_ ejecutando: 'ionic serve'
 
