@@ -1,6 +1,7 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="tertiary">
     <ion-title>MJ Chat</ion-title>
+    <ion-icon name="walk-outline" slot="start" ></ion-icon>
   </ion-toolbar>
 </ion-header>
  
@@ -34,7 +35,6 @@
     </div>
   </form>
  
-    <ion-button (click)="signUp()" expand="full">Sing up</ion-button>
-    <ion-button (click)="signIn()" expand="full" color="secondary">Sing in</ion-button>
- 
+    <ion-button (click)="signUp()" expand="full" color="warning">Sing up</ion-button>
+    <ion-button (click)="signIn()" expand="full" color="success">Sing in</ion-button>
 </ion-content>
