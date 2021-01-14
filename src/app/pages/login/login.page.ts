@@ -50,6 +50,30 @@ export class LoginPage implements OnInit {
       );
   }
 
+  async signIn() {
+    const loading = await this.loadingController.create();
+    await loading.present();
+ 
+    this.chatService
+      .signIn(this.credentialForm.value)
+      .then(
+        (res) => {
+          loading.dismiss();
+          this.router.navigateByUrl('/chat', { replaceUrl: true });
+        },
+        async (err) => {
+          loading.dismiss();
+          const alert = await this.alertController.create({
+            header: ':(',
+            message: err.message,
+            buttons: ['OK'],
+          });
+ 
+          await alert.present();
+        }
+      );
+  }
+
   // Easy access for form fields
   get email() {
     return this.credentialForm.get('email');
