@@ -3,6 +3,7 @@ import { ChatService } from '../../services/chat.service';
 import { Router } from '@angular/router';
 import { IonContent } from '@ionic/angular';
 import { Observable } from 'rxjs';
+import * as CryptoJS from 'crypto-js';
 
 @Component({
   selector: 'app-chat',
@@ -15,6 +16,7 @@ export class ChatPage implements OnInit {
   messages: Observable<any[]>;
   newMsg = '';
 
+  secretKey = "123456&Descryption";
   constructor(private chatService: ChatService, private router: Router) { }
 
   ngOnInit() {
@@ -32,6 +34,10 @@ export class ChatPage implements OnInit {
     this.chatService.signOut().then(() => {
       this.router.navigateByUrl('/', { replaceUrl: true });
     });
+  }
+
+  decrypt(textToDecrypt : string){
+    return CryptoJS.AES.decrypt(textToDecrypt, this.secretKey.trim()).toString(CryptoJS.enc.Utf8);
   }
 
 }

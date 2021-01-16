@@ -62,7 +62,7 @@ export class ChatService {
  
 addChatMessage(msg) {
   return this.afs.collection('messages').add({
-    msg: msg,
+    msg: this.encrypt(msg),
     from: this.currentUser.uid,
     createdAt: firebase.firestore.FieldValue.serverTimestamp()
   });
@@ -80,8 +80,10 @@ getChatMessages() {
       for (let m of messages) {          
         m.fromName = this.getUserForMsg(m.from, users);
         m.myMsg = this.currentUser.uid === m.from;
-      }        
-      return messages
+        m.msg= this.decrypt(m.msg);
+      }
+      console.log('all messages', messages);        
+      return messages;
     })
   )
 }
