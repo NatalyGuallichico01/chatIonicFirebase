@@ -4,6 +4,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import firebase from 'firebase/app';
 import { switchMap, map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import * as CryptoJS from 'crypto-js';
 
 export interface User {
   uid: string;
@@ -25,6 +26,7 @@ export interface Message {
 export class ChatService {
   currentUser: User = null;
 
+  secretKey = "123456&Descryption";
   constructor(private afAuth: AngularFireAuth, private afs: AngularFirestore) { 
     this.afAuth.onAuthStateChanged((user) => {
       this.currentUser = user;      
@@ -95,5 +97,13 @@ private getUserForMsg(msgFromId, users: User[]): string {
     }
   }
   return 'Deleted';
+}
+
+encrypt(value : string) : string{
+  return CryptoJS.AES.encrypt(value, this.secretKey.trim()).toString();
+}
+
+decrypt(textToDecrypt : string){
+  return CryptoJS.AES.decrypt(textToDecrypt, this.secretKey.trim()).toString(CryptoJS.enc.Utf8);
 }
 }
