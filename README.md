@@ -42,9 +42,11 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 
 * Registrarse: Click en Sing up.
 * Iniciar Sesión: Click en Sing in.
+* La contraseña del usuario sera almacenada cifrada.
 
 **Envío de mensajes:**
 * Enviar mensaje: Formulario y botón para el envío.
+* Los mensajes serán almacenados cifrados.
 
 ## 📦 APK
 
