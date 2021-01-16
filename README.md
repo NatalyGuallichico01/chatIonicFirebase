@@ -35,6 +35,7 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 ## :floppy_disk: Disposición
 
 * Correr el servidor en _localhost://8100_ ejecutando: 'ionic serve'
+* Descargar APK
 
 ## :cool: Características
 
