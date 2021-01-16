@@ -23,9 +23,7 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 
 ## :camera: Screenshots
 
-![todo items shown on ionic frontend and Firestore database](./tmp/LogIn_UI.png),
-[](./tmp/Chat_UI.png),
-[](./tmp/Icon.png)
+![todo items shown on ionic frontend and Firestore database](./tmp/ChatApp.png)
 
 ## :signal_strength: Tecnologías
 
