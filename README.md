@@ -20,6 +20,16 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 * import firebase from 'firebase/app';
 * import { switchMap, map } from 'rxjs/operators';
 * import { Observable } from 'rxjs';
+* import * as CryptoJS from 'crypto-js';
+
+#Funcionamiento
+* El funcionamiento es simple un login y chat
+* Los mensaje son cifrados para garantizar fiabilidad y seguridad
+* De la misma manera las contraseñas de los usuarios son cifradas para una mejor confiabilidad.
+
+#Explicación de funcionamiento
+* Los detalles del funcionamiento se encuntran explicados en el video.
+* [Ver video](https://youtube.com)
 
 ## :camera: Screenshots
 
