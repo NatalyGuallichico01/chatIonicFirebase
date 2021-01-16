@@ -23,7 +23,7 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 
 ## :camera: Screenshots
 
-![todo items shown on ionic frontend and Firestore database](./img/logIn.png)
+![todo items shown on ionic frontend and Firestore database](./img/logIn_UI.png)
 
 ## :signal_strength: Tecnologías
 
