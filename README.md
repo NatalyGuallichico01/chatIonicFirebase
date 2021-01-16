@@ -29,7 +29,7 @@ App creada usando [Ionic framework](https://ionicframework.com/docs), usando una
 
 #Explicación de funcionamiento
 * Los detalles del funcionamiento se encuntran explicados en el video.
-* [Ver video](https://youtube.com)
+* [Ver video](https://youtu.be/K4nU4qRKpHg)
 
 ## :camera: Screenshots
 
